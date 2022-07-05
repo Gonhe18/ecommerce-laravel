@@ -1,0 +1,180 @@
+.contenidoCard {
+    width: 90%;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.849);
+    .cardItem {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        height: 100%;
+        align-items: center;
+        .imgCard {
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .prodImg {
+                width: 90%;
+                height: 90%;
+            }
+        }
+        .bloqueContenedor {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 4px 6px 10px gray;
+            padding: 50px 0;
+            .titContenedor {
+                width: 75%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.5rem;
+                color: #000;
+                font-weight: bold;
+                font-family: "Ramaraja", serif;
+                letter-spacing: 0.5rem;
+                margin-top: 20px;
+            }
+            .separador {
+                width: 70%;
+                border-bottom: 1px solid #000;
+                margin: 20px 0;
+            }
+            .bloqueContador {
+                width: 100%;
+                height: 45%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h4 {
+                    font-size: 2.5rem;
+                    font-family: "Syne Mono", monospace;
+                }
+                h5 {
+                    font-size: 1.5rem;
+                    font-family: "Syne Mono", monospace;
+                }
+                p {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+            }
+            .contador {
+                width: 80%;
+                padding: 3px;
+                border: 1px solid #807c7c;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 15px;
+                &:hover {
+                    background-color: #c2c0c07a;
+                    border: 1px solid #000;
+                }
+                .modifCant {
+                    width: 100%;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .aumentar,
+                    .disminuir {
+                        margin: 3px;
+                        font-size: 1.2rem;
+                    }
+                    .aumentar:hover {
+                        color: green;
+                    }
+                    .disminuir:hover {
+                        color: red;
+                    }
+                }
+                .cant-item {
+                    font-size: 1.3rem;
+                    margin: 0;
+                    font-weight: bold;
+                }
+            }
+            .btn-detalleItem {
+                width: 50%;
+                background-color: rgb(126, 177, 179);
+                font-size: 1.2rem;
+                font-weight: bold;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+            }
+            .btnAdmin {
+                width: 100%;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .btnActualizar,
+                .formDelete {
+                    width: 50%;
+                    text-align: center;
+                }
+                .actualizar,
+                .eliminar {
+                    width: 80%;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    border-radius: 15px;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    -ms-border-radius: 15px;
+                    -o-border-radius: 15px;
+                    text-decoration: none;
+                }
+                .actualizar {
+                    background-color: green;
+                    &:hover {
+                        background-color: lavender;
+                        color: black;
+                    }
+                }
+                .eliminar {
+                    background-color: red;
+                    &:hover {
+                        background-color: lavender;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .bloqueDescripcion {
+            font-family: "Roboto", sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 15px;
+            box-shadow: 2px 4px 10px rgb(0, 0, 0);
+            text-align: start;
+            list-style-type: none;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            border-radius: 10px;
+            .textDescripcion {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

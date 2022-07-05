@@ -1,0 +1,18 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Ramaraja&family=Roboto:wght@300&family=Syne+Mono&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Estilos
+@import "general";
+@import "navbar";
+@import "productos";
+@import "detalleProd";
+@import "admin";
+@import "newProd";
+@import "carrito";
+@import "footer";

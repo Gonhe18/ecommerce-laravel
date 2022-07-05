@@ -1,0 +1,39 @@
+.contenedorAdmin {
+    width: 75%;
+    margin: auto;
+    .botonesAdmin {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        align-items: center;
+        border: 1px solid #000;
+        .enlacebtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 200px;
+            text-decoration: none;
+            .btn-adm {
+                width: 70%;
+                height: 50px;
+                font-size: 1.3rem;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                font-weight: bold;
+            }
+            .crearUser {
+                background-color: green;
+            }
+            .crearProd {
+                background-color: cornflowerblue;
+            }
+            .modEl {
+                background-color: darkorange;
+            }
+        }
+    }
+}

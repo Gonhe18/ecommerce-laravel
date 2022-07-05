@@ -1,0 +1,52 @@
+.formNewProd {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .cajaChicaForm {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        .infoForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            label {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            input {
+                width: 85%;
+                text-align: center;
+            }
+        }
+    }
+    .descripcionForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        label {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        textarea {
+            width: 75%;
+            height: 150px;
+        }
+    }
+    button {
+        width: 40%;
+        background-color: cadetblue;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin: auto;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+}
