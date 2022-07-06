@@ -43,11 +43,7 @@
               </a>
 
               <div class="dropdown-menu dropdown-menu-end " aria-labelledby="navbarDropdown">
-                <a class="dropdown-item adminUser" href="#">Mis datos</a>
-                <a class="dropdown-item adminUser" href="#">Historial compras</a>
-                @if (Auth::user()->admin == true)
-                  <a class="dropdown-item adminUser" href="{{ route('admin') }}">Administrador</a>
-                @endif
+                <a class="dropdown-item adminUser" href="{{ route('admin') }}">Administrador</a>
                 <a class="dropdown-item adminUser" href="{{ route('logout') }}"
                   onclick="event.preventDefault();
                                                    document.getElementById('logout-form').submit();">

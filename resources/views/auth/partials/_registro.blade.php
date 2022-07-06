@@ -4,7 +4,7 @@
 
   <div class="col-md-6">
     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name"
-      value="{{ old('name') }}" required autocomplete="name" autofocus>
+      value="{{ old('name' || auth()->user()->name) }}" required autocomplete="name" autofocus>
 
     @error('name')
       <span class="invalid-feedback" role="alert">
@@ -19,7 +19,7 @@
 
   <div class="col-md-6">
     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
-      value="{{ old('email') }}" required autocomplete="email">
+      value="{{ old('email' || auth()->user()->email) }}" required autocomplete="email">
 
     @error('email')
       <span class="invalid-feedback" role="alert">

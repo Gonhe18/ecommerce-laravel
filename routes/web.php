@@ -26,3 +26,6 @@ Route::get('/admin/editproducto/{id}', [ProductoController::class, 'edit'])->nam
 Route::patch('/admin/editproducto/{id}', [ProductoController::class, 'update'])->name('editProd');
 // Eliminar producto
 Route::delete('/admin/eliminarproducto/{id}', [ProductoController::class, 'delete'])->name('deleteProd');
+// Actualizar datos Usuario
+Route::get('/admin/editusuario/{id}', [AdminController::class, 'edit'])->name('editUsuario');
+Route::patch('/admin/editusuario/{id}', [AdminController::class, 'update'])->name('editUsuario');

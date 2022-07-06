@@ -1,38 +1,61 @@
 .contenedorAdmin {
-    width: 75%;
+    width: 80%;
     margin: auto;
     .botonesAdmin {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
-        align-items: center;
-        border: 1px solid #000;
+        width: 100%;
+        height: 350px;
         .enlacebtn {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 50%;
-            height: 200px;
-            text-decoration: none;
+            width: 35%;
+            height: 70px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            margin: 20px;
             .btn-adm {
-                width: 70%;
-                height: 50px;
+                width: 100%;
+                color: #000;
+                text-decoration: none;
                 font-size: 1.3rem;
-                border-radius: 15px;
-                -webkit-border-radius: 15px;
-                -moz-border-radius: 15px;
-                -ms-border-radius: 15px;
-                -o-border-radius: 15px;
                 font-weight: bold;
             }
-            .crearUser {
-                background-color: green;
+        }
+        .misDatos {
+            background-color: darksalmon;
+            &:hover {
+                background-color: darkgrey;
             }
-            .crearProd {
-                background-color: cornflowerblue;
+        }
+        .histCompras {
+            background-color: sienna;
+            &:hover {
+                background-color: darkgrey;
             }
-            .modEl {
-                background-color: darkorange;
+        }
+        .crearUser {
+            background-color: green;
+            &:hover {
+                background-color: darkgrey;
+            }
+        }
+        .crearProd {
+            background-color: cornflowerblue;
+            &:hover {
+                background-color: darkgrey;
+            }
+        }
+        .modEl {
+            background-color: darkorange;
+            &:hover {
+                background-color: darkgrey;
             }
         }
     }

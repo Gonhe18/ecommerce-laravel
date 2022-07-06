@@ -39,4 +39,21 @@ class AdminController extends Controller
     {
         return view('admin.administrador');
     }
+
+    public function edit($userId)
+    {
+        $usuarioId = User::findOrFail($userId);
+        return view('admin.actualizarUser', compact('usuarioId'));
+    }
+
+    public function update(Request $request, $userId)
+    {
+        $userId->name = $request->input('name');
+        $userId->email = $request->input('email');
+        $userId->password = $request->input('password');
+        $userId->admin = $request->input('admin');
+        $userId->save();
+        back()->with('status', 'Datos actualizados correctamente');
+        return to_route('admin.administrador');
+    }
 }

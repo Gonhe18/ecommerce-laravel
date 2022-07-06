@@ -10262,6 +10262,15 @@ li {
   list-style-type: none;
 }
 
+.titulo {
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Passion One", cursive;
+  letter-spacing: 1rem;
+}
+
 .barraNavegacion {
   background-color: #e3f2fd;
 }
@@ -10278,15 +10287,6 @@ li {
 }
 
 /* CARD PRODUCTOS */
-.titulo {
-  text-align: center;
-  font-size: 4rem;
-  padding: 10px 0;
-  text-transform: capitalize;
-  font-family: "Passion One", cursive;
-  letter-spacing: 1rem;
-}
-
 .cardProd {
   width: 100%;
   max-width: 1170px;
@@ -10543,43 +10543,66 @@ li {
 }
 
 .contenedorAdmin {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 .contenedorAdmin .botonesAdmin {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
-  align-items: center;
-  border: 1px solid #000;
+  width: 100%;
+  height: 350px;
 }
 .contenedorAdmin .botonesAdmin .enlacebtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 200px;
-  text-decoration: none;
-}
-.contenedorAdmin .botonesAdmin .enlacebtn .btn-adm {
-  width: 70%;
-  height: 50px;
-  font-size: 1.3rem;
+  width: 35%;
+  height: 70px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  margin: 20px;
+}
+.contenedorAdmin .botonesAdmin .enlacebtn .btn-adm {
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.3rem;
   font-weight: bold;
 }
-.contenedorAdmin .botonesAdmin .enlacebtn .crearUser {
+.contenedorAdmin .botonesAdmin .misDatos {
+  background-color: darksalmon;
+}
+.contenedorAdmin .botonesAdmin .misDatos:hover {
+  background-color: darkgrey;
+}
+.contenedorAdmin .botonesAdmin .histCompras {
+  background-color: sienna;
+}
+.contenedorAdmin .botonesAdmin .histCompras:hover {
+  background-color: darkgrey;
+}
+.contenedorAdmin .botonesAdmin .crearUser {
   background-color: green;
 }
-.contenedorAdmin .botonesAdmin .enlacebtn .crearProd {
+.contenedorAdmin .botonesAdmin .crearUser:hover {
+  background-color: darkgrey;
+}
+.contenedorAdmin .botonesAdmin .crearProd {
   background-color: cornflowerblue;
 }
-.contenedorAdmin .botonesAdmin .enlacebtn .modEl {
+.contenedorAdmin .botonesAdmin .crearProd:hover {
+  background-color: darkgrey;
+}
+.contenedorAdmin .botonesAdmin .modEl {
   background-color: darkorange;
+}
+.contenedorAdmin .botonesAdmin .modEl:hover {
+  background-color: darkgrey;
 }
 
 .formNewProd {

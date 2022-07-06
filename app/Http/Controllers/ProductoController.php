@@ -32,7 +32,7 @@ class ProductoController extends Controller
         $prodId = Producto::findOrFail($productoId);
         return view('productos.editProducto', compact('prodId'));
     }
-    public function update($productoId)
+    public function update(Request $request, $productoId)
     {
         $prodId = Producto::findOrFail($productoId);
         $prodId->categoria = $request->input('categoria');
